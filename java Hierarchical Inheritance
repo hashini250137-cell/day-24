@@ -1,0 +1,30 @@
+class Shape {
+    void display() {
+        System.out.println("This is a Shape");
+    }
+}
+
+class Circle extends Shape {
+    void show() {
+        System.out.println("This is a Circle");
+    }
+}
+
+class Square extends Shape {
+    void show() {
+        System.out.println("This is a Square");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Circle c = new Circle();
+        Square s = new Square();
+
+        c.display();
+        c.show();
+
+        s.display();
+        s.show();
+    }
+}
